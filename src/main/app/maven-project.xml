@@ -18,7 +18,7 @@ http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/
     
     <flow name="mavenFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/hello" doc:name="/hello"/>
-        <set-payload value="#['Hello Maven']" doc:name="Hello Response"/>
+        <set-payload value="H" doc:name="Hello Response"/>
     </flow>
     <flow name="retrieveFlights">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/flights" doc:name="HTTP"/>
